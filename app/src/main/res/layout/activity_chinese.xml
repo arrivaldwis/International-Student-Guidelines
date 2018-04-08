@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical"
+    tools:context="com.sandywinata.isg.Chinese">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtHeaderChineseLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHINESE LANGUAGE PROGRAMS"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_below="@id/txtHeaderChineseLanguage"
+            android:id="@+id/txtdetailChineseLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LIST OF PROGRAMS"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sandywinata.isg.Askforleave">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtHeaderAskforLeave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:text="ASK FOR LEAVE"/>
+        <TextView
+            android:id="@+id/askleaveclass"
+            android:layout_below="@id/txtHeaderAskforLeave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. Ask for leave from class"
+            android:textSize="20dp" />
+        <RelativeLayout
+            android:id="@+id/txtdetailLeaveClass"
+            android:layout_below="@id/askleaveclass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgLeaveClass"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/forbiddencity" />
+            <TextView
+                android:layout_toRightOf="@id/imgLeaveClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Fill the application Form of Leaving in Exchange Office"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/askleavetrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B. Ask for leave for Trip"
+            android:textSize="20dp" />
+        <RelativeLayout
+            android:id="@+id/txtdetailLeaveforTrip"
+            android:layout_below="@id/askleavetrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgLeaveforTrip"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/forbiddencity" />
+            <TextView
+                android:layout_toRightOf="@id/imgLeaveforTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Fill the application Form of Leaving in Exchange Office"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

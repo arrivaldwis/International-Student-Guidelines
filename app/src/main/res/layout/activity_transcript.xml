@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical"
+    tools:context="com.sandywinata.isg.Transcript">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtHeaderTranscript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="TRANSCRIPT"/>
+        <RelativeLayout
+            android:id="@+id/txtdetailTranscript"
+            android:layout_below="@id/txtHeaderTranscript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/transpict"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:src="@drawable/transcript"/>
+            <TextView
+                android:layout_toRightOf="@id/transpict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="As an exchange student you may have to know, what the exact have to do before apply "/>
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@id/txtdetailTranscript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A following question about the transcript, such as : "/>
+    </RelativeLayout>
+</LinearLayout>

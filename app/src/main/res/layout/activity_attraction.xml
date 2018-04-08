@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context="com.sandywinata.isg.Attraction">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtTitleAttraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:text="Attraction in Beijing"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_below="@id/txtTitleAttraction"
+                android:id="@+id/txtAboutBeijing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Beijing"
+                android:textSize="18dp"/>
+            <Button
+                android:id="@+id/btnPointofInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Point of Intrest in Beijing"
+                />
+        </RelativeLayout>
+
+</LinearLayout>

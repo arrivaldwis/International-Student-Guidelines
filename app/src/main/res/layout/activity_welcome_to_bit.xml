@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec"
+    tools:context="com.sandywinata.isg.WelcomeToBit">
+
+
+    <!-- TOP CONTENT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/WTB"
+        >
+        <RelativeLayout
+            android:id="@+id/WTBPict1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/centralbld"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/txtAboutBIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/WTBPict1">
+            <TextView
+                android:text="About Beijing Institute of Technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Content -->
+    <RelativeLayout
+        android:layout_below="@id/WTB"
+        android:id="@+id/txtContentWTB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="International Coorporation"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+</LinearLayout>
+
