@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#ececec"
     android:weightSum="2"
-    tools:context="com.sandywinata.isg.BITCampuses">
+    tools:context="com.sandywinata.isg.view.activity.BITCampuses">
 
     <GridLayout
         android:columnCount="1"

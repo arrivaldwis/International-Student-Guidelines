@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ececec"
-    tools:context="com.sandywinata.isg.Home">
+    tools:context="com.sandywinata.isg.view.activity.Home">
 
     <!-- TOP CONTENT -->
     <RelativeLayout

@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "1045298644148",
-    "firebase_url": "https://isg18-da953.firebaseio.com",
-    "project_id": "isg18-da953",
-    "storage_bucket": "isg18-da953.appspot.com"
+    "project_number": "479027633950",
+    "firebase_url": "https://international-student-guide.firebaseio.com",
+    "project_id": "international-student-guide",
+    "storage_bucket": "international-student-guide.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1045298644148:android:16ae62e1b91dada3",
+        "mobilesdk_app_id": "1:479027633950:android:16ae62e1b91dada3",
         "android_client_info": {
           "package_name": "com.sandywinata.isg"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1045298644148-d9ssbr2g9k370dmgogrcgvtnjo5kaeuu.apps.googleusercontent.com",
+          "client_id": "479027633950-dbjeeqp8bl3nip2cepf3h89ren4d1cs3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.sandywinata.isg",
-            "certificate_hash": "fb4f3fdba79d3a870baa377c4e34a66474ffb930"
+            "certificate_hash": "daf1262783612ca2429f43f5ee4041434fdd84f1"
           }
         },
         {
-          "client_id": "1045298644148-7lp0ka1btcqa7f55p09t9ebmdcck6hfg.apps.googleusercontent.com",
+          "client_id": "479027633950-u8fhb6ss27rckhg9nd455pvgcihe39ct.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCEk2-QvD9VdM01TJgFvqr_4-O4wWqfnEE"
+          "current_key": "AIzaSyBA96qzXC3owB4oEOTasgC4h-nEFyQU96w"
         }
       ],
       "services": {
@@ -40,7 +40,51 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "1045298644148-7lp0ka1btcqa7f55p09t9ebmdcck6hfg.apps.googleusercontent.com",
+              "client_id": "479027633950-u8fhb6ss27rckhg9nd455pvgcihe39ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479027633950:android:db2c0c148d38e7d2",
+        "android_client_info": {
+          "package_name": "com.sandywinata.isgupdate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479027633950-300or0dfcqbjmsnj7h4ol74hpsbkkd5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sandywinata.isgupdate",
+            "certificate_hash": "daf1262783612ca2429f43f5ee4041434fdd84f1"
+          }
+        },
+        {
+          "client_id": "479027633950-u8fhb6ss27rckhg9nd455pvgcihe39ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA96qzXC3owB4oEOTasgC4h-nEFyQU96w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479027633950-u8fhb6ss27rckhg9nd455pvgcihe39ct.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

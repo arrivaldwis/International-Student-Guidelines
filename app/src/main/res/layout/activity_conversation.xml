@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#ececec"
     android:weightSum="10"
-    tools:context="com.sandywinata.isg.Conversation">
+    tools:context="com.sandywinata.isg.view.activity.Conversation">
 
     <!--- TOP CONTENT -->
     <RelativeLayout

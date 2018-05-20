@@ -7,7 +7,7 @@
     android:background="#ececec"
     android:orientation="vertical"
     android:weightSum="7"
-    tools:context="com.sandywinata.isg.TodoList">
+    tools:context="com.sandywinata.isg.view.activity.TodoList">
 
     <RelativeLayout
         android:layout_width="match_parent"
