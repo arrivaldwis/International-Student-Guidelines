@@ -27,6 +27,7 @@ public class Constants extends Application {
     public final static DatabaseReference refStarting = database.getReference("starting");
     public final static DatabaseReference refProgram = database.getReference("program");
     public final static DatabaseReference refTodo = database.getReference("todo");
+    public final static DatabaseReference refBanner = database.getReference("banner");
 
     //firebase auth
     public final static FirebaseAuth mAuth = FirebaseAuth.getInstance();

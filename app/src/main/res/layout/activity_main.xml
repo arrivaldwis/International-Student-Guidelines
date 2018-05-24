@@ -13,13 +13,13 @@
     <RelativeLayout
         android:layout_weight="2"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@color/colorPrimary">
-        <ImageView
+        android:layout_height="55dp">
+        <ss.com.bannerslider.Slider
+            android:id="@+id/bannerSlider"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bit2007"
-            android:scaleType="fitXY"/>
+            android:layout_height="match_parent"
+            app:slider_interval="5000"
+            app:slider_loopSlides="true"/>
     </RelativeLayout>
 
     <!-- Menu -->
