@@ -65,8 +65,12 @@ public class MainActivity extends AppCompatActivity {
         cvTodolist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TodoList.class);
-                startActivity(intent);
+                if(Constants.currentUser==null) {
+                    Toast.makeText(MainActivity.this, "Only for student, please login first", Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(getApplicationContext(), TodoList.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -174,5 +178,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        
     }
 }

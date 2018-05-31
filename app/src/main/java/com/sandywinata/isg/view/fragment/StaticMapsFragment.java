@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.jsibbold.zoomage.ZoomageView;
 import com.sandywinata.isg.R;
 import com.sandywinata.isg.config.Constants;
 
@@ -46,7 +47,7 @@ public class StaticMapsFragment extends Fragment {
     @BindView(R.id.btnFind)
     Button btnFind;
     @BindView(R.id.imgMap)
-    ImageView imgMap;
+    ZoomageView imgMap;
 
     private ArrayAdapter<String> adapter;
 

@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+import com.jsibbold.zoomage.ZoomageView;
 import com.sandywinata.isg.R;
 import com.sandywinata.isg.config.Constants;
 import com.sandywinata.isg.model.AcademicModel;
@@ -23,7 +24,7 @@ import butterknife.ButterKnife;
 public class Academic extends AppCompatActivity {
 
     @BindView(R.id.imgTranscript)
-    ImageView imgTranscript;
+    ZoomageView imgTranscript;
     @BindView(R.id.tvName)
     TextView tvName;
 
