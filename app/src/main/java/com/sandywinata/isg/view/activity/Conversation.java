@@ -14,7 +14,9 @@ import com.sandywinata.isg.R;
 
 public class Conversation extends AppCompatActivity {
 
-    CardView cvGreetings, cvAddressingPeople, cvNumber, cvEatingOut, cvTimeExpression, cvPlace, cvCountryName, cvEverydayLanguage;
+    CardView cvGreetings, cvAddressingPeople, cvNumber,
+            cvEatingOut, cvTimeExpression, cvPlace, cvCountryName,
+            cvEverydayLanguage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +32,16 @@ public class Conversation extends AppCompatActivity {
         cvAddressingPeople = (CardView) findViewById(R.id.cvAddressingPeople);
         cvNumber = (CardView) findViewById(R.id.cvNumber);
         cvEatingOut = (CardView) findViewById(R.id.cvEatingOut);
-        cvTimeExpression = (CardView) findViewById(R.id.cvTimeExpression);
-        cvPlace = (CardView) findViewById(R.id.cvPlace);
+        //cvTimeExpression = (CardView) findViewById(R.id.cvTimeExpression);
+        //cvPlace = (CardView) findViewById(R.id.cvPlace);
         cvCountryName = (CardView) findViewById(R.id.cvCountryName);
-        cvEverydayLanguage = (CardView) findViewById(R.id.cvPlace);
+        cvEverydayLanguage = (CardView) findViewById(R.id.cvEverydayLanguage);
 
         cvGreetings.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Greetings.class);
+                intent.putExtra("menu", "greetings");
                 startActivity(intent);
             }
         });
@@ -47,6 +50,7 @@ public class Conversation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Greetings.class);
+                intent.putExtra("menu", "addressing");
                 startActivity(intent);
             }
         });
@@ -55,6 +59,7 @@ public class Conversation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Greetings.class);
+                intent.putExtra("menu", "number");
                 startActivity(intent);
             }
         });
@@ -63,22 +68,7 @@ public class Conversation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Greetings.class);
-                startActivity(intent);
-            }
-        });
-
-        cvTimeExpression.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Greetings.class);
-                startActivity(intent);
-            }
-        });
-
-        cvPlace.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Greetings.class);
+                intent.putExtra("menu", "eating");
                 startActivity(intent);
             }
         });
@@ -87,6 +77,7 @@ public class Conversation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Greetings.class);
+                intent.putExtra("menu", "country");
                 startActivity(intent);
             }
         });
@@ -95,6 +86,7 @@ public class Conversation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Greetings.class);
+                intent.putExtra("menu", "everyday");
                 startActivity(intent);
             }
         });

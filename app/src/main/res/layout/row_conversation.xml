@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Hello!" />
+
+            <LinearLayout
+                android:id="@+id/llConversation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEnglish"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvHanzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我不知道"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tvPinyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wo bu zhi dao" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_speaker" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
