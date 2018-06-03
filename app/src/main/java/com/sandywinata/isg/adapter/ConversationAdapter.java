@@ -69,6 +69,7 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
     }
 
     boolean clicked = false;
+    MediaPlayer mediaPlayer = new MediaPlayer();
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
@@ -84,19 +85,23 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
                     clicked = true;
                     holder.llConversation.setVisibility(View.VISIBLE);
                     holder.cv.setBackgroundColor(context.getResources().getColor(R.color.default_indicator_color_selected));
-                    mediaPlayer.start();
+                    mediaPlayer = new MediaPlayer();
                     playMusic(comment.getMusic_url());
                 } else {
                     clicked = false;
                     holder.llConversation.setVisibility(View.GONE);
                     holder.cv.setBackgroundColor(context.getResources().getColor(R.color.cardview_light_background));
-                    mediaPlayer.stop();
+
+                    if(mediaPlayer!=null){
+                        mediaPlayer.stop();
+                        mediaPlayer.release();
+                        mediaPlayer = null;
+                    }
                 }
             }
         });
     }
 
-    MediaPlayer mediaPlayer = new MediaPlayer();
     private void playMusic(String url) {
 
         mediaPlayer.setOnErrorListener(new MediaPlayer.OnErrorListener() {
